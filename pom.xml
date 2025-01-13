@@ -10,6 +10,8 @@
     </parent>
 
     <properties>
+        <changelist>999999-SNAPSHOT</changelist>
+        <gitHubRepo>jenkinsci/date-parameter-plugin</gitHubRepo>
         <!-- Baseline Jenkins version you use to build the plugin. Users must have this version or newer to run. -->
         <jenkins.version>2.361.4</jenkins.version>
         <!-- Other properties you may want to use:
@@ -21,7 +23,7 @@
 
     <groupId>me.leejay.jenkins</groupId>
     <artifactId>date-parameter</artifactId>
-    <version>0.0.5-SNAPSHOT</version>
+    <version>${changelist}</version>
     <packaging>hpi</packaging>
     <name>Date Parameter Plugin</name>
     <url>https://wiki.jenkins-ci.org/display/JENKINS/Date+Parameter+Plugin</url>
@@ -36,10 +38,10 @@
     </licenses>
 
     <scm>
-        <connection>scm:git:git://github.com/jenkinsci/date-parameter-plugin.git</connection>
-        <developerConnection>scm:git:git@github.com:jenkinsci/date-parameter-plugin.git</developerConnection>
-        <url>https://github.com/jenkinsci/date-parameter-plugin</url>
-      <tag>HEAD</tag>
+        <connection>scm:git:git://github.com/${gitHubRepo}.git</connection>
+        <developerConnection>scm:git:git@github.com:${gitHubRepo}.git</developerConnection>
+        <url>https://github.com/${gitHubRepo}</url>
+      <tag>${scmTag}</tag>
   </scm>
 
     <developers>
